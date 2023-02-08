@@ -3,12 +3,14 @@ const searchIcon = document.querySelector(".search-icon");
 const hamburgerIcon = document.querySelector(".nav-hamburger");
 const closeIcon = document.querySelector(".nav-hamburger-close");
 
+
 searchIcon.addEventListener("click", () => {
    nav.classList.toggle("openSearch");
    nav.classList.remove("open-navigation");
    if(nav.classList.contains("openSearch")) {
       return searchIcon.classList.replace("fa-magnifying-glass", "fa-xmark")
    }
+  
    searchIcon.classList.replace("fa-xmark", "fa-magnifying-glass");
 });
 

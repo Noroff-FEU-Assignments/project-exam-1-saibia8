@@ -22,13 +22,15 @@
 </head>
 
 <body>
-   <header>
+   <header class="bg-dark">
+      <div class="container">
          <nav class="nav">
             <i class="fa-solid fa-bars nav-hamburger"></i>
-            <a href="index.html"><img class="logo" src="/images/sweet-cactus-logo.png" alt="The sweet cactus blog logo with a cactus in a pot icon."></a>
-            <ul class="nav-links" role="list">
+            <a href="index.html"><img class="logo" src="/images/sweet-cactus-logo.png"
+                  alt="The sweet cactus blog logo with a cactus in a pot icon."></a>
+            <ul class="nav-links">
                <i class="fa-solid fa-xmark nav-hamburger-close"></i>
-               <li><a href="index.html">home</a></li>
+               <li><a aria-current="page" href="index.html">home</a></li>
                <li><a href="/html/posts.html">posts</a></li>
                <li><a href="/html/about.html">about</a></li>
                <li><a href="/html/contact.html">contact us</a></li>
@@ -39,6 +41,7 @@
                <input type="text" placeholder="search">
             </div>
          </nav>
+      </div>
    </header>
 
    <main>
@@ -46,13 +49,79 @@
          <div class="container">
             <div class="even-columns">
                <div>
-                  <h1 class="fs-900 text-heading-clr">kuku</h1>
+                  <h1 class="fs-900 text-heading-clr">The sweet cactus blog</h1>
+                  <p>Here you'll find all of your cactus-related needs,
+                     from fun facts to useful tips to the best cactus care advice.</p>
+                  <a href="html/posts.html">Read posts</a>
                </div>
-               <div></div>
+               <div>
+                  <div class="circle"></div>
+                  <img src="images/cactus-green-spikes.png"
+                     alt="Half part of the green cactus with spines on a transparent background.">
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section>
+         <div class="container">
+            <h2>The latest posts</h2>
+            <!-- Here in the carousel will be fetched data from the API call -->
+         </div>
+      </section>
+
+      <section>
+         <div class="container even-columns">
+            <div>
+               <h3>Subscribe for the Latest</h3>
+               <p>This allows you to stay current on topics and trends without having to constantly search for new
+                  content yourself!</p>
+               <form method="post">
+                  <label for="name">Full name</label>
+                  <input id="name" type="text">
+                  <label for="email">Email</label>
+                  <input id="email" type="email">
+               </form>
+               <button></button>
+            </div>
+            <div>
+               <div class="circle"></div>
+               <img src="images/echinopsis-cactus-plant-with-pink-flower.png"
+                  alt="The pink-potted echinopsis cactus with a pink blossom.">
             </div>
          </div>
       </section>
    </main>
+
+   <footer class="bg-dark">
+      <div class="container footer-wrapper">
+         <div>
+            <a href="index.html"><img class="logo" src="/images/sweet-cactus-logo.png"
+                  alt="The sweet cactus blog logo with a cactus in a pot icon."></a>
+         </div>
+         <nav>
+            <ul aria-label="footer">
+               <li><a href="index.html">home</a></li>
+               <li><a href="/html/posts.html">posts</a></li>
+               <li><a href="/html/about.html">about</a></li>
+               <li><a href="/html/contact.html">contact us</a></li>
+            </ul>
+         </nav>
+         <div>
+            <ul aria-label="Social media links" class="social-links">
+               <li><a aria-label="facebook" href="https://www.facebook.com/" target="_blank"
+                     title="Facebook opens in a new window"><i class="fa-brands fa-facebook fa-xl"></i></a>
+               </li>
+               <li><a aria-label="instagram" href="https://www.instagram.com/" target="_blank"
+                     title="Instagram opens in a new window"><i class="fa-brands fa-instagram fa-xl"></i></a>
+               </li>
+               <li><a aria-label="twitter" href="https://twitter.com/?lang=en" target="_blank"
+                     title="Twitter opens in a new window"><i class="fa-brands fa-twitter fa-xl"></i></a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </footer>
 </body>
 
 </html>

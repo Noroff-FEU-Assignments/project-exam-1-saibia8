@@ -107,10 +107,6 @@ svg {
 
 /* Utility clases 
 ------------------------------------------*/
-body {
-   background-color: #E8E7E3;
-}
-
 .text-body-clr {
   color: var(--clr-dark);
 }
@@ -125,6 +121,10 @@ body {
 
 .bg-light {
   background-color: var(--clr-light);
+}
+
+.bg-dark {
+  background-color: var(--clr-dark);
 }
 
 .bg-green-200 {
@@ -179,20 +179,60 @@ body {
   font-size: var(--fs-900);
 }
 
+/* General styling
+------------------------------------------*/
+body {
+  font-size: var(--fs-body);
+  font-family: var(--ff-primary);
+  background-color: #E8E7E3;
+  color: var(--clr-dark);
+}
+
+.container {
+  --max-width: 100rem;
+  --padding: 1rem;
+
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
+}
+
+.even-columns {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 50em) {
+  .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+}
+
+ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: var(--clr-light);
+}
+
+nav,
+footer {
+  font-family: var(--ff-heading);
+  font-size: var(--fs-450);
+}
+
 /* Navigation 
 ------------------------------------------*/
-/* header {
-   width: 100%;
-} */
 .nav {
   position: sticky;
   top: 0;
   left: 0;
   width: 100%;
   height: 3.9rem;
-  background-color: var(--clr-dark);
-  padding: 15px 200px;
-  font-family: var(--ff-heading);
+  /* padding: 15px 200px; */
   justify-content: space-between;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
@@ -214,7 +254,7 @@ align-items: center;
 }
 
 .logo {
-  max-width: 6.7rem;
+  max-width: 7rem;
 }
 
 .nav-links a {
@@ -267,7 +307,7 @@ align-items: center;
    outline: none;
    border-radius: var(--border-radius-small);
    background-color: var(--clr-light);
-   padding: 0 15px 0 45px;
+   padding: 0 15px 0 45px; 
 }
 
 .nav .nav-hamburger-close,
@@ -275,21 +315,25 @@ align-items: center;
    display: none;
 }
 
+.nav-links [aria-current="page"] {
+ text-decoration: underline #E8E7E3 17px;
+}
+
 /* Navigation. Media queries.
 ------------------------------------------*/
 @media (max-width: 1160px) {
-   .nav {
-      padding: 15px 100px;
-   }
+   /* .nav {
+      padding: 15px 100px; 
+   } */
    .nav .search-box {
       right: 150px;
    } 
 }
 
 @media (max-width: 950px) {
-   .nav {
-      padding: 15px 50px;
-   }
+   /* .nav {
+      padding: 15px 50px; 
+   } */
    .nav .search-box {
       right: 100px;
       max-width: 400px;
@@ -302,20 +346,21 @@ align-items: center;
       flex-direction: column;
       background-color: var(--clr-dark);
       height: 100%;
-      max-width: 280px;
+      /* max-width: 280px; */
       width: 100%;
       top: 0;
       left: -100%;
       padding-top: 100px;
       row-gap: 30px;
+      opacity: 0.96;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       transition: all 0.4s ease;
       z-index: 100;
    }
 
-   .nav {
+   /* .nav {
       padding: 15px 20px;
-   }
+   } */
 
    .nav.open-navigation .nav-links {
       left: 0;
@@ -342,4 +387,69 @@ align-items: center;
       transform: translateX(50%);
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
    } 
+
+   .nav-links [aria-current="page"] {
+    text-decoration: underline #E8E7E3 6px;
+   }
+}
+
+/* Footer
+------------------------------------------*/
+.footer-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 6rem;
+}
+
+footer nav ul {
+  display: flex;
+  gap: 3rem;
+}
+
+footer .social-links {
+  display: flex;
+  gap: 1.6rem;
+}
+
+/* Footer. Media queries.
+------------------------------------------*/
+@media (max-width: 55em) {
+  .footer-wrapper {
+    gap: 2rem;
+    padding: 2rem 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  footer .logo {
+    margin-right: 3rem;
+    min-width: 10rem;
+  }
+
+  footer .social-links {
+    gap: 2.7rem;
+  }
+}
+
+@media (max-width: 41.875em) {
+  .footer-wrapper {
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+
+  footer nav ul {
+    gap: 2rem;
+  }
+
+  footer .social-links{
+    gap: 3.5rem;
+  }
 }
