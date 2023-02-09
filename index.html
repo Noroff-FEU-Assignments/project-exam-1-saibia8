@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet">
    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/index.css">
    <script src="https://kit.fontawesome.com/968ab2ea9d.js" crossorigin="anonymous"></script>
    <script src="/js/navigation-menu.js" defer></script>
 </head>
@@ -45,18 +46,20 @@
    </header>
 
    <main>
-      <section>
+      <section class="hero">
          <div class="container">
-            <div class="even-columns">
-               <div>
-                  <h1 class="fs-900 text-heading-clr">The sweet cactus blog</h1>
-                  <p>Here you'll find all of your cactus-related needs,
+            <div class="even-columns section-gap text-center">
+               <div class="even-columns-first circle hero-circle-pink">
+                  <h1 class="uppercase fs-primary-heading text-wrapper margin-bottom">
+                     <span class="fs-600">The</span><span class="fw-bold space-between-words text-center">sweet cactus</span>
+                     <span class="fs-600">blog</span>
+                  </h1>
+                  <p class="margin-auto">Here you'll find all of your cactus-related needs,
                      from fun facts to useful tips to the best cactus care advice.</p>
-                  <a href="html/posts.html">Read posts</a>
+                  <a href="html/posts.html" class="button-style button-main kuku">Read posts</a>
                </div>
-               <div>
-                  <div class="circle"></div>
-                  <img src="images/cactus-green-spikes.png"
+               <div class="circle hero-circle-light">
+                  <img class="hero-image margin-auto" src="images/cactus-green-spikes.png"
                      alt="Half part of the green cactus with spines on a transparent background.">
                </div>
             </div>
@@ -64,29 +67,28 @@
       </section>
 
       <section>
-         <div class="container">
-            <h2>The latest posts</h2>
+         <div class="container section-gap">
+            <h2 class="fs-600 fw-semi-bold text-center">The latest posts</h2>
             <!-- Here in the carousel will be fetched data from the API call -->
          </div>
       </section>
 
-      <section>
-         <div class="container even-columns">
-            <div>
-               <h3>Subscribe for the Latest</h3>
+      <section class="subscription section-gap">
+         <div class="container even-columns subscription-container bg-green-200 border-radius-large">
+            <div class="flex-column margin-auto ">
+               <h3 class="fs-600 fw-semi-bold">Subscribe for the Latest</h3>
                <p>This allows you to stay current on topics and trends without having to constantly search for new
                   content yourself!</p>
-               <form method="post">
+               <form method="post" class="">
                   <label for="name">Full name</label>
-                  <input id="name" type="text">
+                  <input class="full-width margin-bottom-half" id="name" type="text">
                   <label for="email">Email</label>
-                  <input id="email" type="email">
+                  <input class="full-width" id="email" type="email">
                </form>
-               <button></button>
+               <button class="button-style">Subscribe</button>
             </div>
-            <div>
-               <div class="circle"></div>
-               <img src="images/echinopsis-cactus-plant-with-pink-flower.png"
+            <div class="circle subscription-circle">
+               <img class="margin-auto" src="images/echinopsis-cactus-plant-with-pink-flower.png"
                   alt="The pink-potted echinopsis cactus with a pink blossom.">
             </div>
          </div>

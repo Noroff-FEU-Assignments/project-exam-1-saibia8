@@ -1,0 +1,140 @@
+@import url(style.css);
+
+/* Hero section styling
+------------------------------------------*/
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 .space-between-words {
+  line-height: 80px;
+  max-width: 20rem;
+}
+
+/* Button styling
+------------------------------------------*/
+.button-main {
+  background-color: var(--clr-dark);
+  margin-top: 2rem;
+}
+
+.button-main:hover {
+  background-color: var(--clr-pink);
+  color: var(--clr-dark);
+  outline-style: inset;
+}
+
+/* Subscription section
+------------------------------------------*/
+.subscription-container {
+  padding: 30px 50px;
+}
+
+.subscription img {
+  max-width: 20rem;
+  filter: drop-shadow(25px 15px 15px rgb(180, 156, 156));
+  justify-self: center;
+}
+
+/* Background circles 
+------------------------------------------*/
+.circle {
+  position: relative;
+  transform-style: preserve-3D;
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.hero-circle-light::before {
+  width: 65%;
+  background-color: var(--clr-light);
+  transform: translateX(-25%);
+  top: 33px;
+}
+
+.hero-circle-pink::before {
+  background-color: var(--clr-pink);
+  width: 35%;
+  transform: translateX(-50%);
+}
+
+.subscription-circle::before {
+  width: 65%;
+  background-color: var(--clr-pink);
+  transform: translateX(45%) translateZ(-1px);
+  top: 10px;
+}
+
+/* Utility modifications
+------------------------------------------*/
+.flex-column {
+  gap: 2rem;
+}
+
+/* Media queries
+------------------------------------------*/
+@media (max-width: 50em) {
+  .even-columns-first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 .space-between-words {
+    line-height: 60px;
+  }
+
+  .hero-image {
+    max-width: 17rem;
+  }
+
+  .button-main {
+    margin-top: 1rem;
+  }
+
+  .subscription img {
+    max-width: 13rem;
+  }
+
+  .subscription-container {
+    padding: 20px 25px;
+  }
+
+  .hero-circle-pink::before {
+    width: 28%;
+    transform: translateX(0%);
+  }
+
+  .hero-circle-light::before {
+    width: 40%;
+    transform: translateX(-25%);
+    top: 23px;
+  }
+
+  .subscription-circle::before {
+    width: 41%;
+    transform: translateX(85%) translateZ(-1px);
+  }
+}
+
+@media (min-width: 57em) {
+  .hero-image {
+    max-width: 27rem;
+  }
+}
+
+@media (max-width: 35.21em) {
+  .subscription-circle::before {
+    width: 60%;
+    transform: translateX(45%) translateZ(-1px);
+  }
+}
