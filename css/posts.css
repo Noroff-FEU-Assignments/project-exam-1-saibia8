@@ -1,0 +1,47 @@
+@import url(style.css);
+
+.posts-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+   gap: 3rem 2rem;
+}
+
+.posts-wrapper {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   background-color: var(--clr-light);
+   border-radius: 50px 50px 15px 15px;
+   filter: drop-shadow(10px 6px 6px rgb(188, 188, 188));
+}
+
+.posts-wrapper img {
+   border-radius: 50px 50px 0 0;
+}
+
+.posts-wrapper a {
+   color: var(--clr-dark);
+   margin-top: auto;
+   align-self: flex-end;
+   margin-bottom: 1rem;
+} 
+
+.posts-wrapper a:hover {
+   text-decoration: none;
+}
+
+.posts-wrapper h2,
+.posts-wrapper p,
+.posts-wrapper a {
+   padding: 0 2rem;
+}
+
+.posts-wrapper p {
+   margin-bottom: 1rem;
+}
+
+.posts-wrapper i {
+   margin-left: 0.5rem;
+}
+
+
