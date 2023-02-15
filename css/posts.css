@@ -1,47 +1,72 @@
 @import url(style.css);
 
 .posts-container {
-   display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-   gap: 3rem 2rem;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+  gap: 2rem;
 }
 
 .posts-wrapper {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   background-color: var(--clr-light);
-   border-radius: 50px 50px 15px 15px;
-   filter: drop-shadow(10px 6px 6px rgb(188, 188, 188));
+max-width: 22rem;
+background-color: var(--clr-light);
+border-radius: 50px 50px 15px 15px;
+filter: drop-shadow(8px 4px 4px rgb(188, 188, 188));
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+transition: transform 0.2s;
+} 
+
+.posts-wrapper:hover > .post-read-link {
+   text-decoration: none;
+   background-color: var(--clr-dark);
+   color: var(--clr-light);
+}
+
+.posts-wrapper:hover {
+   transform: scale(1.018);
+   filter: drop-shadow(18px 6px 6px rgb(149, 149, 149));
 }
 
 .posts-wrapper img {
+   width: 100%;
    border-radius: 50px 50px 0 0;
-}
+   margin: 0 auto;
+} 
 
 .posts-wrapper a {
    color: var(--clr-dark);
-   margin-top: auto;
    align-self: flex-end;
    margin-bottom: 1rem;
+   text-decoration: none;
 } 
 
-.posts-wrapper a:hover {
-   text-decoration: none;
+.post-read-link {
+text-decoration: underline;
+padding: 0.3rem 1rem 0.3rem 0.5rem;
 }
 
 .posts-wrapper h2,
-.posts-wrapper p,
-.posts-wrapper a {
-   padding: 0 2rem;
-}
-
 .posts-wrapper p {
-   margin-bottom: 1rem;
+   margin: 0.8rem 1.3rem 0.3rem 1.4rem;
 }
 
 .posts-wrapper i {
    margin-left: 0.5rem;
 }
 
+.button-show-more {
+   background-color: var(--clr-dark);
+   display: block;
+   max-width: 20rem;
+   margin-top: 3rem;
+   margin-bottom: 2rem;
+   display: none;
+}
+
+.error {
+   max-width: 60rem;
+   display: inline-block;
+}
 

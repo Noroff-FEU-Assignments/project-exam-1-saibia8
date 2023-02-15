@@ -42,19 +42,6 @@ h1 .space-between-words {
 
 /* Background circles 
 ------------------------------------------*/
-.circle {
-  position: inherit;
-  transform-style: preserve-3D;
-}
-
-.circle::before {
-  content: "";
-  position: absolute;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  z-index: -1;
-}
-
 .hero-circle-light::before {
   width: 65%;
   background-color: var(--clr-light);

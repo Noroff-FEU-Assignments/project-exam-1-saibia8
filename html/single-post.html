@@ -5,10 +5,10 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description"
-         content="The maintenance of cacti, their advantages, what makes them unique, and why they are so popular is all covered in the Sweet Cactus blog's posts.">
-      <meta name="keywords" content="cactus, cacti, plants, blog, care, post, popular">
+         content="Each blog post contains useful details about cactus maintenance and environmental benefits.">
+      <meta name="keywords" content="cactus, cacti, plants, care, post, watering">
       <meta name="author" content="Sabina Kutniauske">
-      <title>All Posts | Sweet Cactus</title>
+      <title></title>
       <link rel="icon" type="image/x-icon" href="../images/sweet-cactus-favicon.png">
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
          href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Montserrat:wght@400;500;600;700&display=swap"
          rel="stylesheet">
       <link rel="stylesheet" href="../css/style.css">
-      <link rel="stylesheet" href="../css/posts.css">
+      <link rel="stylesheet" href="../css/single-post.css">
       <script src="https://kit.fontawesome.com/968ab2ea9d.js" crossorigin="anonymous"></script>
    </head>
 <body>
@@ -29,8 +29,8 @@
             <ul class="nav-links">
                <i class="fa-solid fa-xmark nav-hamburger-close"></i>
                <li><a href="../index.html">home</a></li>
-               <li><a aria-current="page" href="posts.html">posts</a></li>
-               <li><a href="about.html">about</a></li>
+               <li><a href="posts.html">posts</a></li>
+               <li><a aria-current="page" href="about.html">about</a></li>
                <li><a href="contact.html">contact us</a></li>
             </ul>
             <i class="fa-solid fa-magnifying-glass search-icon"></i>
@@ -44,13 +44,9 @@
 
    <main>
       <div class="container">
-         <h1 class="uppercase fs-secondary-heading fs-600 text-center fw-semi-bold margin-bottom">The list of blog posts</h1>
+         <a class="button-style" href="posts.html">Back to all posts</a>
          <span class="loader margin-auto"></span>
-         <div class="error-container text-center margin-auto"></div>
-         <div class="posts-container">
-            <!-- All of the posts from the API call are collected here. --> 
-         </div>
-         <button class="button-style button-show-more margin-auto">View more</button>
+         <div class="post-container"></div>
       </div>
    </main>
 
@@ -84,7 +80,7 @@
       </div>
    </footer>
    <script src="../js/errorMessage.js"></script>
-   <script src="../js/allPosts.js"></script>
+   <script src="../js/singlePost.js"></script>
    <script src="../js/navigationMenu.js"></script>
 </body>
 </html>

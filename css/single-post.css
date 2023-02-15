@@ -1,0 +1,27 @@
+@import url(style.css);
+
+.post-container img {
+   width: 30rem;
+   margin-bottom: 1rem;
+}
+
+.post-container li {
+   font-weight: var(--fw-bold);
+}
+
+.post-container h1, 
+.post-container p,
+.post-container ol {
+   margin: 0 auto;
+   max-width: 600px;
+   text-align: left;
+}
+
+.post-container h1, 
+.post-container p {
+   margin-bottom: 1rem;
+}
+
+.post-container p:last-child {
+   margin-bottom: 2rem;
+}
