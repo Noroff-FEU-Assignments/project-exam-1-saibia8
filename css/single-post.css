@@ -5,17 +5,30 @@
    margin-bottom: 1rem;
 }
 
-.post-container li {
+.post-container ol {
    font-weight: var(--fw-bold);
+   list-style: decimal inside;
 }
 
 .post-container h1, 
 .post-container p,
+.post-container ul,
 .post-container ol {
    margin: 0 auto;
    max-width: 600px;
    text-align: left;
 }
+
+.post-container ul {
+margin-bottom: 1rem;
+}
+
+.post-container ul li {
+      list-style: disc inside;
+      margin-bottom: 0.4rem;
+    }
+
+
 
 .post-container h1, 
 .post-container p {
