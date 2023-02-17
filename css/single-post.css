@@ -1,8 +1,16 @@
 @import url(style.css);
 
-.post-container img {
-   width: 30rem;
+.post-container .img-modal {
+   width: 25rem;
+   margin-top: 1rem;
    margin-bottom: 1rem;
+   border-radius: 50px 50px 0 0;
+   filter: drop-shadow(0 4px 4px rgb(188, 188, 188));
+   text-align: left;
+}
+
+.post-container img:hover {
+   cursor: pointer;
 }
 
 .post-container ol {
@@ -16,18 +24,20 @@
 .post-container ol {
    margin: 0 auto;
    max-width: 600px;
-   text-align: left;
 }
 
 .post-container ul {
-margin-bottom: 1rem;
+   margin-bottom: 1rem;
 }
 
 .post-container ul li {
-      list-style: disc inside;
-      margin-bottom: 0.4rem;
-    }
+   list-style: disc inside;
+   margin-bottom: 0.4rem;
+}
 
+.post-container ol li {
+   margin-bottom: 0.1rem;
+}
 
 
 .post-container h1, 
@@ -38,3 +48,75 @@ margin-bottom: 1rem;
 .post-container p:last-child {
    margin-bottom: 2rem;
 }
+
+.button-back-posts {
+  
+   text-decoration: none;
+   background-color: var(--clr-green-200);
+   color: var(--clr-dark);
+   border: 1px solid var(--clr-green-600);
+   padding: 0.5rem 1rem;
+   border-radius: 8px;
+   
+}
+
+.button-back-posts i {
+   margin-right: 0.4rem;
+}
+
+.button-back-posts:hover {
+   background-color: var(--clr-green-600);
+   color: var(--clr-light);
+}
+
+.error {
+   display: block;
+}
+
+/* Modal window
+------------------------------------------*/
+.big-img {
+   position: absolute;
+   width: 55%;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+text-align: center;
+}
+
+@media (max-width: 770px) {
+   .big-img {
+      width: 75%;
+   }
+}
+
+/* .overlay {
+   background: var(--clr-dark);
+   backdrop-filter: blur(3px);
+   width: 100%;
+   height: 100%;
+   position: absolute;
+} */
+/* .img-modal {
+   display: absolute;
+   width: 70%;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   /* backdrop-filter: blur(3px);
+   z-index: 20; */
+/* }
+
+.hidden {
+   display: none;
+} */ 

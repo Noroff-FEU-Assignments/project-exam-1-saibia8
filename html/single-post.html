@@ -20,7 +20,7 @@
       <script src="https://kit.fontawesome.com/968ab2ea9d.js" crossorigin="anonymous"></script>
    </head>
 <body>
-   <header class="bg-dark margin-bottom">
+   <header class="bg-dark margin-bottom-half">
       <div class="container">
          <nav class="nav">
             <i class="fa-solid fa-bars nav-hamburger"></i>
@@ -30,7 +30,7 @@
                <i class="fa-solid fa-xmark nav-hamburger-close"></i>
                <li><a href="../index.html">home</a></li>
                <li><a href="posts.html">posts</a></li>
-               <li><a aria-current="page" href="about.html">about</a></li>
+               <li><a href="about.html">about</a></li>
                <li><a href="contact.html">contact us</a></li>
             </ul>
             <i class="fa-solid fa-magnifying-glass search-icon"></i>
@@ -44,9 +44,10 @@
 
    <main>
       <div class="container">
-         <a class="button-style" href="posts.html">Back to all posts</a>
          <span class="loader margin-auto"></span>
-         <div class="post-container"></div>
+         <div class="post-container">
+              <!-- The single post from the API call. --> 
+         </div>
       </div>
    </main>
 

@@ -32,8 +32,7 @@ async function getPosts(page) {
                                                 <p>${postContent}</p>
                                                 <a class="uppercase post-read-link" href="single-post.html?id=${post.id}">Read more<i class="fa-solid fa-arrow-right-long"></i></a>
                                              </a>
-                                          </article>
-                                       `;
+                                          </article>`;
       });
    }
    catch (error) {

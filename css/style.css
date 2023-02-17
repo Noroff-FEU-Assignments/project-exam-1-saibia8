@@ -338,10 +338,10 @@ border-radius: 5px 20px;
  transition: all 0.3s ease;
 }
 
-.circle {
+/* .circle {
   position: inherit;
   transform-style: preserve-3D;
-}
+} */
 
 /* Background circles
 ------------------------------------------*/
@@ -386,6 +386,10 @@ border-radius: 5px 20px;
   padding: 1rem;
   color: rgb(105, 0, 0);
   background-color: rgb(253, 230, 230);
+  max-width: 60rem;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
 }
 
 /* Navigation 
@@ -501,7 +505,7 @@ align-items: center;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  min-height: 6rem;
+  min-height: 4.5rem;
 }
 
 footer nav ul {

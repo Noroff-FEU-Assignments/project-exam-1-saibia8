@@ -1,1 +1,35 @@
 @import url(style.css);
+
+.about-img {
+   max-width: 17rem;
+   filter: drop-shadow(18px 6px 6px rgb(149, 149, 149));
+   margin-left: 20%;
+}
+
+.about-content {
+   background-color: var(--clr-light);
+   padding: 1rem 2rem;
+   border-radius: var(--border-radius-large);
+   margin-bottom: 2rem;
+   z-index: 1;
+}
+
+.about-content p {
+   margin-bottom: 1rem;
+}
+
+.about-circle::before {
+  width: 165%;
+  background-color: var(--clr-pink);
+  transform: translateX(-5%);
+}
+
+@media (max-width: 770px) {
+   .about-img {
+      max-width: 10rem;
+      margin: 0 auto;
+   }
+.about-circle::before {
+   width: 125%;
+}
+}
