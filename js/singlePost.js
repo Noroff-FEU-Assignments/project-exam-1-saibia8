@@ -25,7 +25,7 @@ async function fetchSinglePost() {
                                        <img class="margin-auto img-modal"
                                        src="${singlePostImage}"
                                        alt="${singlePostAltText}">
-                                 <h1 class="fs-secondary-heading fs-600 text-center fw-semi-bold margin-bottom">${singlePostTitle}</h1>
+                                 <h1 class="fs-secondary-heading text-center fw-semi-bold margin-bottom">${singlePostTitle}</h1>
                                  <p class="margin-auto">${singlePostContent}</p>`;
 
    const imgModalWindow = document.querySelector(".img-modal");

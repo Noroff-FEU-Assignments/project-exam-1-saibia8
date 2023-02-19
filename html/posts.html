@@ -15,7 +15,6 @@
       <link
          href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Montserrat:wght@400;500;600;700&display=swap"
          rel="stylesheet">
-      <link rel="stylesheet" href="../css/style.css">
       <link rel="stylesheet" href="../css/posts.css">
       <script src="https://kit.fontawesome.com/968ab2ea9d.js" crossorigin="anonymous"></script>
    </head>
@@ -44,13 +43,14 @@
 
    <main>
       <div class="container">
-         <h1 class="uppercase fs-secondary-heading fs-600 text-center fw-semi-bold margin-bottom">The list of blog posts</h1>
+         <h1 class="uppercase fs-secondary-heading text-center fw-semi-bold margin-bottom">The list of blog posts</h1>
          <span class="loader margin-auto"></span>
          <div class="error-container text-center margin-auto"></div>
          <div class="posts-container">
             <!-- All of the posts from the API call are collected here. --> 
          </div>
          <button class="button-style button-show-more margin-auto">View more</button>
+         <div class="no-posts text-center margin-auto"><p class="uppercase">No more posts!</p></div>
       </div>
    </main>
 
@@ -84,7 +84,7 @@
       </div>
    </footer>
    <script src="../js/errorMessage.js"></script>
-   <script src="../js/allPosts.js"></script>
    <script src="../js/navigationMenu.js"></script>
+   <script src="../js/allPosts.js"></script>
 </body>
 </html>

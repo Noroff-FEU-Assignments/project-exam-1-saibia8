@@ -379,7 +379,7 @@ border-radius: 5px 20px;
   }
   }
 
-/* Error message styling
+/* Error message 
 ------------------------------------------*/
 .error {
   border: 1px solid darkred;
@@ -390,6 +390,14 @@ border-radius: 5px 20px;
   display: inline-block;
   text-align: center;
   margin: 0 auto;
+}
+
+.form-error {
+  display: none;
+  color: rgb(135, 1, 1);
+  margin-top: 2px;
+  background-color: rgb(253, 230, 230);
+  padding: 0.4rem 0 0.4rem 0.4rem;
 }
 
 /* Navigation 

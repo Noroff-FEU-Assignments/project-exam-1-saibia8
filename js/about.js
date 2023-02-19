@@ -21,7 +21,7 @@ async function getAboutContent() {
                                     <img src="${aboutImg}" alt="${aboutAltText}">
                                  </div>
                                  <div class="about-content">
-                                    <h1 class="fs-secondary-heading fs-600 text-center fw-semi-bold margin-bottom-half">${aboutHeading}</h1>
+                                    <h1 class="fs-secondary-heading text-center fw-semi-bold margin-bottom-half">${aboutHeading}</h1>
                                     <p>${aboutContent}</p>
                                  </div>`;
    } catch (error) {
