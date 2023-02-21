@@ -1,7 +1,7 @@
 const postsContainer = document.querySelector(".posts-container");
 const noPostsContainer = document.querySelector(".no-posts");
-const loader = document.querySelector(".loader");
 const errorContainer = document.querySelector(".error-container");
+const loader = document.querySelector(".loader");
 const btnShowMore = document.querySelector(".button-show-more");
 
 let postPageCounter = 1;
@@ -14,27 +14,25 @@ async function getPosts(page) {
       let baseUrl = `https://greenbush.online/wp-json/wp/v2/posts/?_embed&page=${page}`;
    
       try {
-      const response = await fetch(baseUrl);
-      const posts = await response.json();
+         const response = await fetch(baseUrl);
+         const posts = await response.json();
      
-      loader.style.display = "none";
+         loader.style.display = "none";
 
-      if(showHideButton) { 
-         btnShowMore.style.display = "block";
-      }else{
-         btnShowMore.style.display = "none";
-      };
+         if(showHideButton) { 
+            btnShowMore.style.display = "block";
+         };
       
-      posts.forEach(post => {
-         postImage = post._embedded["wp:featuredmedia"]["0"].source_url;
-         postAltText = post._embedded["wp:featuredmedia"]["0"].alt_text;
-         postTitle = post.title.rendered;
-         postContent = post.excerpt.rendered;
+         posts.forEach(post => {
+            postImage = post._embedded["wp:featuredmedia"]["0"].source_url;
+            postAltText = post._embedded["wp:featuredmedia"]["0"].alt_text;
+            postTitle = post.title.rendered;
+            postContent = post.excerpt.rendered;
          
-         totalPages = response.headers.get("X-WP-TotalPages");
+            totalPages = response.headers.get("X-WP-TotalPages");
 
-         postsContainer.innerHTML += `<article class="posts-wrapper">
-                                          <a href="single-post.html?id=${post.id}">
+            postsContainer.innerHTML += `<article class="posts-wrapper">
+                                             <a href="single-post.html?id=${post.id}">
                                                 <img class="margin-bottom-half" src="${postImage}" alt="${postAltText}">                       
                                                 <h2 class="fw-medium fs-450 margin-bottom-half">${ postTitle}</h2>
                                                 <p>${postContent}</p>
@@ -55,10 +53,11 @@ btnShowMore.addEventListener("click", () => {
   postPageCounter++;
 
   if(postPageCounter == totalPages) {
+   btnShowMore.style.display = "none";
    getPosts(postPageCounter);
    showHideButton = false;
    noPostsContainer.style.display = "block";
-  }else{
+  }else {
    getPosts(postPageCounter);
   }
 });

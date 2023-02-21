@@ -66,53 +66,47 @@
          </div>
       </section>
 
-      <!-- <section>
-         <div>
-            <h2 class="fs-600 fw-semi-bold text-center">The latest posts</h2>
-            <div class="slider-container" item-display-desktop="4" item-display-tablet="3" item-display-mobil="1">
-               <div class="slider-width">
-                 <div class="item">1</div>
-                 <div class="item">2</div>
-                 <div class="item">3</div>
-                 <div class="item">4</div>
-                 <div class="item">5</div>
-                 <div class="item">6</div>
-                 <div class="item">7</div>
-                 <div class="item">8</div>
-                 <div class="item">9</div>
-                 <div class="item">10</div>
-                 <div class="item">11</div>
-                 <div class="item">12</div>
-               </div>
+      <section>
+         <div class="container">
+            <h2 class="fs-600 fw-semi-bold text-center margin-bottom-half">The latest posts</h2>
+            <div class="slider-container" item-display-desktop="4" item-display-tablet="3" item-display-tablet1="2" item-display-mobil="1">
+            <div class="slider-width">
+               <span class="loader margin-auto"></span>
+               <div class="error-container text-center margin-auto"></div>
+            </div>
              </div>
-             <button type="button" class="btn button-left" onclick="prev()">Prev</button>
-             <button type="button" class="btn" onclick="next()">Next</button>
+             <div class="carousel-arrow-container">
+                <button type="button" class="btn btn-left" onclick="prev()"><i class="fa-solid fa-circle-arrow-left"></i></button>
+                <button type="button" class="btn btn-right" onclick="next()"><i class="fa-solid fa-circle-arrow-right"></i></button>
+             </div>
             <!-- Here in the carousel will be fetched data from the API call -->
          </div>
       </section> 
 
       <section class="subscription section-gap">
          <div class="container even-columns subscription-container bg-green-200 border-radius-large">
+            
             <div class="flex-column margin-auto ">
                <h3 class="fs-600 fw-semi-bold">Subscribe for the Latest</h3>
                <p>This allows you to stay current on topics and trends without having to constantly search for new
                   content yourself!</p>
+               <div class="successful-form"></div>
                <form method="post" id="subscriptionForm">
-                  <div>
+                  <div class="margin-bottom-half">
                      <label for="name" class="fw-medium">
                         Name (minimum 3 characters)
-                        <input class="full-width margin-bottom-half" id="name" type="text">
+                        <input class="full-width" id="name" type="text">
                      </label>
-                     <div class="form-error" id="nameError">Enter your name (minimum 3 characters)</div>
+                     <div class="form-error margin-bottom-half" id="nameError">Enter your name (minimum 3 characters)</div>
                   </div>
-                  <div>
+                  <div class="margin-bottom-half">
                      <label for="email" class="fw-medium">
                         Email
                      <input class="full-width" id="email" type="email">
                   </label>
-                  <div class="form-error" id="emailError">Enter a valid email address</div>
+                  <div class="form-error margin-bottom-half" id="emailError">Enter a valid email address</div>
                   </div>
-                  <button class="button-style">Subscribe</button>
+                  <button class="button-style subscription-btn">Subscribe</button>
                </form>
             </div>
             <div class="circle subscription-circle">

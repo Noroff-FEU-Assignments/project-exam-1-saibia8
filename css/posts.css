@@ -43,8 +43,8 @@
 } 
 
 .post-read-link {
-text-decoration: underline;
-padding: 0.3rem 1rem 0.3rem 0.5rem;
+   text-decoration: underline;
+   padding: 0.3rem 1rem 0.3rem 0.5rem;
 }
 
 .posts-wrapper h2,

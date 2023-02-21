@@ -28,34 +28,35 @@
    z-index: 2;
 }
 
- /* Background circles
+/* Background circles
 ------------------------------------------*/
 .circle {
    position: relative;
-   bottom: 0;
+
 }
  .form-circle-light::before {
-   content: "";
+
    width: 25%;
    background-color: var(--clr-light);
    transform: translateX(45%);
    top: -170px;
  }
-
+ 
+/* Error form message
+------------------------------------------*/
+ .form-error {
+   padding: 0.4rem 0 0.4rem 0.4rem;
+ }
+ 
  /* Successful form message
 ------------------------------------------*/
-.successful-form {
-   display: none;
-   padding: 1rem 2rem;
-   margin-bottom: 2rem;
-   font-size: 1.2rem;
-   color: rgb(7, 96, 7);
-   border: 1px solid rgb(39, 113, 39);
-   border-radius: 0.2rem;
-   background-color: rgb(224, 255, 224);
-   width: 100%;
+ .successful-form {
+  max-width: 40rem;
+  margin-bottom: 1rem;
  }
 
+/* Media queries
+------------------------------------------*/
  @media (max-width: 500px) {
    .form-container {
       padding: 0.6rem 1rem;

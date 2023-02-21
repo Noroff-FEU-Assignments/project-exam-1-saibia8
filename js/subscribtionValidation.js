@@ -1,4 +1,5 @@
 const form = document.querySelector("#subscriptionForm");
+const successfulMessage = document.querySelector(".successful-form");
 
 const personName = document.querySelector("#name");
 const personNameError = document.querySelector("#nameError");
@@ -23,8 +24,8 @@ function validateForm(event) {
        emailError.style.display = "block";
    }
  
-   if ((personName.value) && (email.value)) {
-       successfulMessage.innerHTML += `<p>Your message has been sent.</p>`;
+   if ((personName.value.length > 2) && (email.value)) {
+       successfulMessage.innerHTML = `<p class="text-center fw-medium fs-">Thank You! Now relax wait for the exciting news!</p>`;
        successfulMessage.style.display = "block";
    }
    

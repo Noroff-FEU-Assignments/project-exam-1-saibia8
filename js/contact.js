@@ -43,7 +43,7 @@ function validateForm(event) {
    }
    
    if ((personName.value) && (subject.value.length > 14) &&(message.value.length > 24) && (email.value)) {
-       successfulMessage.innerHTML += `<p>Your message has been sent.</p>`;
+       successfulMessage.innerHTML = `<p class="margin-auto text-center">Your message has been sent.</p>`;
        successfulMessage.style.display = "block";
    }
    
