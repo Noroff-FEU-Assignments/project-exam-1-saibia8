@@ -48,7 +48,8 @@
 }
 
 .posts-wrapper h2,
-.posts-wrapper p {
+.posts-wrapper p,
+.post-date-author  {
    margin: 0.8rem 1.3rem 0.3rem 1.4rem;
 }
 
@@ -77,5 +78,9 @@
    font-size: var(--fs-450);
 }
 
-
+.post-date-author {
+   display: flex;
+   flex-direction: column;
+   font-size: var(--fs-350);
+}
 

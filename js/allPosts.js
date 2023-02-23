@@ -28,12 +28,18 @@ async function getPosts(page) {
             postAltText = post._embedded["wp:featuredmedia"]["0"].alt_text;
             postTitle = post.title.rendered;
             postContent = post.excerpt.rendered;
-         
+            postAuthor = post._embedded["author"]["0"].name;
+            postDate = (post.date).substring(0, 10);
+            
             totalPages = response.headers.get("X-WP-TotalPages");
 
             postsContainer.innerHTML += `<article class="posts-wrapper">
                                              <a href="single-post.html?id=${post.id}">
-                                                <img class="margin-bottom-half" src="${postImage}" alt="${postAltText}">                       
+                                                <img class="margin-bottom-half" src="${postImage}" alt="${postAltText}"> 
+                                                <div class="post-date-author">
+                                                <time class="fw-medium">${postDate}</time>
+                                                <address>${postAuthor}</address>
+                                                </div>                 
                                                 <h2 class="fw-medium fs-450 margin-bottom-half">${ postTitle}</h2>
                                                 <p>${postContent}</p>
                                                 <a class="uppercase post-read-link" href="single-post.html?id=${post.id}">Read more<i class="fa-solid fa-arrow-right-long"></i></a>

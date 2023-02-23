@@ -27,20 +27,6 @@
    right: -30px;
    z-index: 2;
 }
-
-/* Background circles
-------------------------------------------*/
-.circle {
-   position: relative;
-
-}
- .form-circle-light::before {
-
-   width: 25%;
-   background-color: var(--clr-light);
-   transform: translateX(45%);
-   top: -170px;
- }
  
 /* Error form message
 ------------------------------------------*/

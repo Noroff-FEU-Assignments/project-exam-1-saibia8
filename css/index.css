@@ -129,7 +129,7 @@ h1 .space-between-words {
 .slider-container {
   position: relative;
   overflow-x: hidden;
-  height: 400px;
+  height: 450px;
 }
 
 .slider-width {
@@ -145,7 +145,7 @@ h1 .space-between-words {
 .carousel-item {
   background: var(--clr-light);
   width: 300px;
-  height: 400px;
+  height: 450px;
   margin: 0 10px;
   display: flex;
   flex-direction: column;
@@ -180,12 +180,13 @@ h1 .space-between-words {
   display: flex;
   justify-content: space-between;
   position: relative;
-  bottom: 230px;
-}
+  bottom: 240px;
+} 
 
 .btn-left {
   position: relative;
   right: 17px;
+  visibility: hidden;
 }
 
 .btn-right {
@@ -208,11 +209,24 @@ h1 .space-between-words {
 }
 
 .carousel-item .post-title {
-  margin-top: 0.4rem;
-  padding: 0 0.7rem;
-  text-align: center;
+  margin: 1rem;
+  padding: 0 0.8rem;
+}
+
+.carousel-item .carousel-time,
+.carousel-item address {
+  padding: 0 0.8rem;
 }
 
 .carousel-item img {
   border-radius: 50px 50px 0 0;
+}
+
+.carousel-item address {
+  margin: 0.2rem 0 0 1rem;
+}
+.carousel-time {
+  display: block;
+  font-size: var(--fs-350);
+  margin: 0.7rem 0 0 1rem;
 }

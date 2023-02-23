@@ -50,12 +50,12 @@
 }
 
 .button-back-posts {
+   display: inline-block;
    text-decoration: none;
-   background-color: var(--clr-green-200);
-   color: var(--clr-dark);
-   border: 1px solid var(--clr-green-600);
+   background-color: var(--clr-green-600);
+   color: var(--clr-light);
    padding: 0.5rem 1rem;
-   border-radius: 8px;
+   border-radius: var(--border-radius-small);
 }
 
 .button-back-posts i {
@@ -63,11 +63,20 @@
 }
 
 .button-back-posts:hover {
-   background-color: var(--clr-green-600);
-   color: var(--clr-light);
+   background-color: var(--clr-green-400);
+}
+
+@media (max-width: 31.25em) {
+   .button-back-posts {
+      width: 100%;
+   }
 }
 
 .error {
+   display: block;
+}
+
+.post-date-author {
    display: block;
 }
 

@@ -28,7 +28,6 @@ function validateForm(event) {
        successfulMessage.innerHTML = `<p class="text-center fw-medium fs-">Thank You! Now relax wait for the exciting news!</p>`;
        successfulMessage.style.display = "block";
    }
-   
    form.reset();
 }
 

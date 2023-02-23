@@ -29,7 +29,7 @@
       max-width: 10rem;
       margin: 0 auto;
    }
-.about-circle::before {
-   width: 125%;
-}
+   .about-circle::before {
+      width: 125%;
+   }
 }
