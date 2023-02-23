@@ -39,7 +39,7 @@ async function getCarouselPosts() {
                                               <time class="carousel-time">${postDate}</time>
                                               <address>${postAuthor}</address>
                                               <h3 class="fw-semi-bold fs-450 margin-bottom-half post-title">${postTitle}</h3>
-                                              <a class="uppercase post-read-link" href="/html/single-post.html?id=${postId}">Read more<i class="fa-solid fa-arrow-right-long"></i></a>
+                                              <a class="uppercase post-read-link" title="Read more" href="/html/single-post.html?id=${postId}">Read more<i class="fa-solid fa-arrow-right-long"></i></a>
                                             </article>
                                            </a>`;
       });
