@@ -2,6 +2,7 @@
 
 .post-container .post-img {
    width: 25rem;
+   height: auto;
    margin-top: 1rem;
    margin-bottom: 1rem;
    border-radius: 50px 50px 0 0;
