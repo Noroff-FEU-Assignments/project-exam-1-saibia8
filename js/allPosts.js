@@ -34,7 +34,7 @@ async function getPosts(page) {
             totalPages = response.headers.get("X-WP-TotalPages");
 
             postsContainer.innerHTML += `<article class="posts-wrapper">
-                                             <a href="single-post.html?id=${post.id}">
+                                             <a href="single-post.html?id=${post.id}&slug=${post.slug}">
                                                 <img class="margin-bottom-half" src="${postImage}" alt="${postAltText}"> 
                                                 <div class="post-date-author">
                                                 <time class="fw-medium">${postDate}</time>

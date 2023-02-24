@@ -5,9 +5,8 @@ const pageTitle = document.querySelector("title");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
-const slug = params.get("slug");
 
-const url = `https://greenbush.online/wp-json/wp/v2/posts/${id}?slug&_embed`;
+const url = `https://greenbush.online/wp-json/wp/v2/posts/${id}?_embed`;
 
 async function fetchSinglePost() {
    try {
