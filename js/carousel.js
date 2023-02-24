@@ -26,7 +26,7 @@ async function getCarouselPosts() {
          loader.style.display = "none";
       
          carouselPosts.forEach(carouselPost => {
-            postImage = carouselPost._embedded["wp:featuredmedia"]["0"].source_url;
+            postImage = carouselPost._embedded["wp:featuredmedia"]["0"].media_details.sizes.medium.source_url;
             postAltText = carouselPost._embedded["wp:featuredmedia"]["0"].alt_text;
             postTitle = carouselPost.title.rendered;
             postId = carouselPost.id;
