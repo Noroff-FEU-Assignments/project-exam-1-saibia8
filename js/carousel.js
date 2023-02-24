@@ -33,7 +33,7 @@ async function getCarouselPosts() {
             postAuthor = carouselPost._embedded["author"]["0"].name;
             postDate = (carouselPost.date).substring(0, 10);
          
-            sliderContainer.innerHTML += `<a href="/html/single-post.html?id=${postId}&slug=${carouselPost.slug}">
+            sliderContainer.innerHTML += `<a href="/html/single-post.html?id=${postId}&slug=${carouselPost.slug}" aria-label="Read post">
                                             <article class="carousel-item">
                                               <img src="${postImage}" alt="${postAltText}">
                                               <time class="carousel-time">${postDate}</time>
