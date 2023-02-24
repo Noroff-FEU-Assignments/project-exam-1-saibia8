@@ -42,7 +42,7 @@ async function getPosts(page) {
                                                 </div>                 
                                                 <h2 class="fw-medium fs-450 margin-bottom-half">${ postTitle}</h2>
                                                 <p>${postContent}</p>
-                                                <a class="uppercase post-read-link" title="Read more" href="single-post.html?id=${post.id}&slug=${post.slug}">Read post<i class="fa-solid fa-arrow-right-long"></i></a>
+                                                <a class="uppercase post-read-link" aria-label="Read post" href="single-post.html?id=${post.id}&slug=${post.slug}">Read post<i class="fa-solid fa-arrow-right-long"></i></a>
                                              </a>
                                           </article>`;
       });
