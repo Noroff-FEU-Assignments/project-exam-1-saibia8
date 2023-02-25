@@ -19,12 +19,13 @@
 }
 
 .about-circle::before {
+  content: "";
   width: 165%;
   background-color: var(--clr-pink);
   transform: translateX(-5%);
 }
 
-@media (max-width: 770px) {
+@media (max-width: 799px) {
    .about-img {
       max-width: 10rem;
       margin: 0 auto;

@@ -220,6 +220,7 @@ h1 .space-between-words {
 
 .carousel-item img {
   border-radius: 50px 50px 0 0;
+  width: 100%;
 }
 
 .carousel-item address {
