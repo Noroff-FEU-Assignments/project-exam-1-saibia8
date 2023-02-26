@@ -57,7 +57,6 @@ getPosts(postPageCounter);
 
 btnShowMore.addEventListener("click", () => {
   postPageCounter++;
-
   if(postPageCounter == totalPages) {
    btnShowMore.style.display = "none";
    getPosts(postPageCounter);
