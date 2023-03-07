@@ -1,7 +1,6 @@
 # The Sweet Cactus Blog (Project Exam 1)
 
-<img src="/images/projectScreenshoot.jpg" width="500">
-
+![sweet-cactus-blog-screenshot](https://user-images.githubusercontent.com/104776669/223411854-bcbde427-2e41-4501-9a87-62b765beab24.jpg)
 
 This is my first year frontend development project exam at Noroff. Duration of the project 5 weeks.
 
