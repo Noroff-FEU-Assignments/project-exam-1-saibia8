@@ -11,7 +11,7 @@ This is my first year frontend development project exam at Noroff. Duration of t
 This project should reflect my creative and technical knowledge and skills from my first year at Noroff. The assignment is the creation of a blog website on a topic of my choice. My topic of choice is a blog website about cacti. I have been using HTML, CSS, and JavaScript, and have coded a call to the WordPress REST API to fetch the data. The content for website is stored on a WordPress installation used as a Headless CMS. To collect the data, a hotjar is installed.
 
 A website have following pages:
--	Home page (with a carousel with the latest posts).
+-	Home page (a carousel with the latest posts).
 -	About page (fictional information about the blog creators).
 -	List of blog posts (shows the first 10 post and have a show more button to load more post from the API call).
 -	Blog post specific pages (is built using a query string parameter based on whatever link the user clicked, a modal appears giving the user a bigger view of that image).
